@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.plan-container {
+  @apply py-20 px-4 md:px-20;
+}
+
+.plan-grid {
+  @apply max-w-[1240px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pb-[40px];
+}
+
+.plan-box {
+  @apply shadow-xl bg-white border border-gray-200 rounded-lg flex flex-col justify-center items-center p-6 hover:scale-105 transition-transform duration-300;
+}
+
+.plan-icon {
+  @apply w-[80px] h-[80px] text-gray-700 mb-4; /* Removed the negative margin */
+  @apply mb-6; /* Add bottom margin to create space */
+}
+
+.plan-title {
+  @apply text-[18px] md:text-[22px] font-bold mb-2;
+}
+
+.plan-price {
+  @apply text-[20px] md:text-[25px] font-bold mb-4;
+}
+
+.plan-text {
+  @apply text-[14px] md:text-[16px] mb-2;
+}
+
+.plan-text-center {
+  @apply text-[14px] md:text-[16px] mb-2 text-center;
+}
+
+.plan-divider {
+  @apply my-2 border-gray-300;
+}
+
+.plan-button {
+  @apply rounded w-full md:w-[50%] p-3 m-10 bg-black text-white hover:bg-green-700 transition-colors duration-300;
+}
